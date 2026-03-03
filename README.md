@@ -10,9 +10,18 @@ End-to-end analytics and modeling on the Olist Brazil e-commerce dataset (2016�
 - **Format:** 9 CSV tables
 - **Scale:** ~100,000 rows (raw), mixed **numerical/categorical/text/date** fields
 - **Known data issues handled in this project:** missing values (~5–10%), formatting inconsistencies (e.g., dates/categories), and multi-table joins.
+---
+## How to Navigate
+
+This repository is organized for fast review and reproducibility:
+
+- **`/code/`**: 7 standalone scripts/notebooks — each file answers one research question (one analysis per question).
+- **`/report/`**: final presentation/report summarizing methods, results, and recommendations.
+- **`/data/`**: the Olist dataset (CSV tables). Raw tables are kept as-is; each analysis script loads and merges the required files.
+
+> Tip: Start with the report for context, then open the corresponding analysis in `/code/`.
 
 ---
-
 ## Research Questions & Methods (7 Analyses)
 
 ### 1) Delivery Proficiency — What drives delivery time?
@@ -41,9 +50,6 @@ Features include delivery time, product photos quantity, product description len
 **Goal:** tailor platform support and improve marketplace health.  
 **Method:** Hierarchical clustering on seller-level aggregated product/price/revenue/sales and listing-quality metrics (name/description length, photos, weight/dimensions).
 
-### 7) Consolidated Recommendations
-A final script/notebook that summarizes findings across analyses and translates them into business recommendations (logistics, marketing, review incentives, and seller support).
-
 ---
 
 ## Key Business Takeaways (high level)
@@ -52,5 +58,12 @@ A final script/notebook that summarizes findings across analyses and translates 
 - Review behavior is influenced by price and delivery outcomes; incentives and logistics improvements can increase review rates.
 - Customer and seller clustering enable targeted retention and growth strategies (e.g., focus resources on loyal repeat segments; tailored support for high-performing sellers).
 
----
 
+## Contributors
+
+- Camila Gutierrez  
+- Theresse Nilson  
+- Ali Senel  
+- Vera van Gansewinkel  
+- Ashia Norhalim  
+- Diana Vossberg
